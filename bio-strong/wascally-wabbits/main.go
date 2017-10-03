@@ -1,11 +1,8 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 )
-
-var file = flag.String("file", "", "path to data set")
 
 func getRabbitCountAfter(n, k int) int {
 	p1, p2 := 0, 1
