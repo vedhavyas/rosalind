@@ -5,13 +5,13 @@ import (
 )
 
 func getRabbitCountAfter(n, k int) int {
-	nmRbs, mRbs := 0, 1
+	p1, p2 := 0, 1
 
 	for i := 2; i < n; i++ {
-		nmRbs, mRbs = mRbs*k, nmRbs+mRbs
+		p1, p2 = p2*k, p1+p2
 	}
 
-	return nmRbs + mRbs
+	return p1 + p2
 }
 
 func main() {
